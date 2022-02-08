@@ -1,0 +1,26 @@
+<div class="container" *ngIf="!loginState.isLogged">
+
+    <mat-card class="login-card">
+        <mat-card-title>Login Section</mat-card-title>
+        <mat-card-content>
+            <mat-form-field class="login-form-field" appearance="fill">
+                <mat-label>Username</mat-label>
+                <input name="username"  matInput type="text" [(ngModel)]="loginState.username">
+                <button *ngIf="loginState.username" matSuffix mat-icon-button aria-label="Clear" (click)="loginState.username=''">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+              <mat-form-field class="login-form-field" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input name="password"  matInput type="text" [(ngModel)]="loginState.password">
+                <button *ngIf="loginState.password" matSuffix mat-icon-button aria-label="Clear" (click)="loginState.password=''">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+          <button (click)="newUserState()" mat-raised-button color="primary">Log in</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
+
