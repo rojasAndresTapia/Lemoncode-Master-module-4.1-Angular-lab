@@ -1,12 +1,12 @@
 <div class="nav-container">
   <ul class="nav-bar">
-    <li><p>{{loginState.username}}</p></li>
-    <li><button mat-button routerLink="/dashboard" routerLinkActive="selected">Dashboard</button></li>
+    <li><p class="username">{{loginState.username}}</p></li>
+    <li><button mat-button class="menuLink" routerLink="/dashboard" routerLinkActive="selected">Dashboard</button></li>
 
-    <li><button mat-button routerLink="/gallery" routerLinkActive="selected">Gallery</button></li>
-    <li><button mat-button routerLink="/crud" routerLinkActive="selected">CRUD</button></li>
-    <li><button mat-button routerLink="/profile" routerLinkActive="selected">Profile</button></li>
-    <li><button (click)="logOut()" mat-raised-button>Log-out</button></li>
+    <li><button mat-button class="menuLink" routerLink="/gallery" routerLinkActive="selected">Gallery</button></li>
+    <li><button mat-button class="menuLink" routerLink="/crud" routerLinkActive="selected">CRUD</button></li>
+    <li><button mat-button class="menuLink" routerLink="/profile" routerLinkActive="selected">Profile</button></li>
+    <li><button (click)="logOut()" class="menuLink" mat-raised-button>Log-out</button></li>
 </ul>
 
 </div>

@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
 
   newUserState = () => {
     if (
-      this.loginState.password === '12345678' &&
-      this.loginState.username === 'master8@lemoncode.net'
+      this.loginState.password === '12345' &&
+      this.loginState.username === 'admin@gmail.com'
     ) {
       this.service.updateLoginState({
         username: this.loginState.username,

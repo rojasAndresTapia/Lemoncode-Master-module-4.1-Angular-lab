@@ -1,11 +1,18 @@
 .container {
-    display:flex;
-    justify-content: center;
-    max-width:50%;
-    flex-direction: column;
-    margin:auto;
-    .content {
-      padding-top:100px;
-      padding-bottom:100px;
-    }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+
+  .content {
+    color: #fff;
+    max-width: 80%;
+    margin: 50px;
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
 }

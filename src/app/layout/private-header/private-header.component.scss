@@ -1,3 +1,10 @@
 .nav-container {
   display:flex;
+  position: fixed;
+  top: 0;
+  margin-top: 10px;
+  background: linear-gradient(to right, #868f96 0%, #596164 100%);
+  align-items: center;
+  width: 100%;
+  padding:13px;
 }
